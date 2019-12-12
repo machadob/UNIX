@@ -1,8 +1,8 @@
 #Find large files
-find / -xdev -type f -size +200M
+find . -xdev -type f -size +200M
 
-find / -xdev -type f -size +200M -exec ls -la {} \; | sort -nk 5
+find . -xdev -type f -size +200M -exec ls -la {} \; | sort -nk 5
 
-find / -size +200M -ls
+find . -size +200M -ls
 
-find / -size +200M -size -12M -ls
+find . -size +200M -size -12M -ls
