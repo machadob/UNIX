@@ -1,1 +1,4 @@
 #Find large files
+find / -xdev -type f -size +102400000c
+
+find / -xdev -type f -size +100M -exec ls -la {} \; | sort -nk 5
